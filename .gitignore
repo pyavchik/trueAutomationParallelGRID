@@ -3,6 +3,7 @@
 build/
 *.iml
 target/
+trueautomation.json
 
 
 
