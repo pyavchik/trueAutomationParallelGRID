@@ -3,19 +3,14 @@ package remote;
 import io.trueautomation.client.driver.TrueAutomationDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import static io.trueautomation.client.TrueAutomationHelper.ta;
-import static java.lang.Thread.sleep;
 
 public class exampleRemoteTest1 {
     private TrueAutomationDriver driver;
@@ -37,7 +32,6 @@ public class exampleRemoteTest1 {
 
     @Test
     public void exampleTest() {
-
         driver.get("https://trueautomation.io");
         driver.findElement(loginBtn).click();
         driver.findElement(signupBtn).click();

@@ -8,12 +8,10 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import static io.trueautomation.client.TrueAutomationHelper.ta;
-import static java.lang.Thread.sleep;
+
 
 public class exampleRemoteTest3 {
     private TrueAutomationDriver driver;
@@ -36,13 +34,10 @@ public class exampleRemoteTest3 {
     }
 
     @Test
-    public void exampleTest() throws InterruptedException {
-
+    public void exampleTest() {
         driver.get("https://trueautomation.io");
         driver.findElement(loginBtn).click();
-        Thread.sleep(5000);
         driver.findElement(signupBtn).click();
-        Thread.sleep(5000);
         driver.findElement(emailFl).sendKeys("your@mail.com");
     }
 

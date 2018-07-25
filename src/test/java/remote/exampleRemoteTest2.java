@@ -8,8 +8,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import static io.trueautomation.client.TrueAutomationHelper.ta;
@@ -33,7 +31,6 @@ public class exampleRemoteTest2 {
 
     @Test
     public void exampleTest() {
-
         driver.get("https://trueautomation.io");
         driver.findElement(loginBtn).click();
         driver.findElement(signupBtn).click();
